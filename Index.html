@@ -1,0 +1,61 @@
+<html>
+    <body>
+
+        <div>
+        <form>
+            <fieldset>
+            <label>Formula is: FV = ((PV*(1+Interest)^n)</label>
+                <legend>Time Value of Money Calculator</legend>
+                <p>
+                <label>Present Value</label>
+                <input type = "number"
+                        id = "pv"
+                        value = "1000" />
+                </p>
+                <p>
+                <label>Interest</label>
+                <input type = "number"
+                        id = "interest"
+                        value = "0.01" />
+                </p>
+                <p>
+                <label>n</label>
+                <input type = "number"
+                        id = "n"
+                        value = "1" />
+                </p>
+                <p>
+                <!-- <label>t</label>
+                <input type = "number"
+                        id = "t"
+                        value = "10" /> -->
+                </p>
+                
+
+            <button id="danial" type="button" onclick="myFunction()">Click Me!</button>      </fieldset>
+            </form>
+        </div>
+        
+        <script>
+
+            document.getElementById("danial").onclick = function() {myFunction()};
+            
+            function myFunction() {
+            
+            
+              // let PV = 
+              let PV = document.getElementById("pv").value
+              let interest = document.getElementById("interest").value
+              let n = document.getElementById("n").value
+            //   let t = document.getElementById("t").value
+            
+              FV = (PV * (1 + interest))^n
+              alert(FV)
+            
+            }
+            </script>
+    
+    
+    
+    </body>
+</html>
